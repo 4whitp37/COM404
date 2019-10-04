@@ -1,0 +1,8 @@
+print("      .-.")
+print("     (e e)")
+print("    _.`V'._")
+print("   //~~W~~\\")
+print("  //      \\")
+print(" // |     | \\")
+print(" \) |     | (/")
+print("    \     /")
