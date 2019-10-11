@@ -1,10 +1,12 @@
 #for loop - text in reverse
-word = ""
+#word = ""
 
 print("What phrase do you see?")
-phrase =str(input())
+phrase = str(input())
+print("Reversing...")
+print()
+print("The phrase is: ")
 
-for position in range(0,len(phrase), -1):
-    print("The phrase is: " + phrase[position])
-    #number = number +1
-
+for position in range(len(phrase)-1,-1, -1):
+    print( phrase[position], end='')
+print()
