@@ -1,13 +1,27 @@
-#function with return value
-Beep_weight =32
-Bop_weight = 5
+#function-calls
 
-def sum_weights(Beep_weight,Bop_weight):
-        total_weight = int(Beep_weight) + int(Bop_weight)
-        return
+word="Hello"
 
-def calc_avg_weight(Beep_weight,Bop_weight):
-        avg_weight = (sum_weights(Beep_weight,Bop_weight) / 2)
-        return avg_weight
-    
-total_weight()
+def displaybox(word):
+    print("------")
+    print("|" + word + "|")
+    print("------")
+
+displaybox(word)
+
+def displaylowercase(word):
+        print(word.lower())
+
+displaylowercase(word)
+
+def displayuppercase(word):
+        print(word.upper())
+
+displayuppercase(word)
+
+def displaymirrored(word):
+    for position in range(len(word)-1,-1, -1):
+        print(word[position], end='')
+    print()
+        
+displaymirrored(word)
