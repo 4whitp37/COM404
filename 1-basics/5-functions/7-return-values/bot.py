@@ -1,6 +1,6 @@
 #function with return value
 def sum_weights(Beep_weight,Bop_weight):
-        total_weight = int(Beep_weight) + int(Bop_weight)
+        total_weight = Beep_weight + Bop_weight
         return total_weight
 
 def calc_avg_weight(Beep_weight,Bop_weight):
@@ -9,9 +9,9 @@ def calc_avg_weight(Beep_weight,Bop_weight):
     
 def run():
     print("What is the weight of Beep?")
-    Beep_weight = input()
+    Beep_weight = int(input())
     print("What is the weight of Bop?")
-    Bop_weight = input()
+    Bop_weight = int(input())
     print("What would you like to calcluate (sum or average)?")
     calculate = input()
 
