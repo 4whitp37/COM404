@@ -1,36 +1,36 @@
 class Bot:
     def __init__(self, name, age, energy,shield):
-        self.name = name
-        self.age = age
-        self.energy = energy
-        self.shield = shield
+        self.__name = name
+        self.__age = age
+        self.__energy = energy
+        self.__shield = shield
 
     def get_name(self):
-        return self.name
+        return self.__name
 
     def get_age(self):
-        return self.age
+        return self.__age
 
     def get_energy(self):
-        return self.energy
+        return self.__energy
 
     def get_shield(self):
-        return self.shield
+        return self.__shield
 
     def decrement_energy(self):
-        self.energy -= 1
+        self.__energy -= 1
 
     def decrement_shield(self):
-        self.shield -= 1
+        self.__shield -= 1
 
     def display_name(self):
         print("--------")
-        print("|", self.name, "|")
+        print("|", self.__name, "|")
         print("--------")
 
     def display_age(self):
           print("     iiiiiiiiii")
-          print("   |:",self.age,"today:|")
+          print("   |:",self.__age,"today:|")
           print(" __|___________|__")
           print("|^^^^^^^^^^^^^^^^^|")
           print("|                 |")
@@ -38,7 +38,7 @@ class Bot:
           print("~~~~~~~~~~~~~~~~~~~")
 
     def display_energy(self):
-        for count in range(0,self.energy):
+        for count in range(0,self.__energy):
             print("▯ ",end='')
         print()
 
@@ -46,19 +46,19 @@ class Bot:
         print("|`-._/\_.-`|")
         print("|          |")
         print("|          |")
-        print("|    ", self.shield,"   |")
+        print("|    ", self.__shield,"   |")
         print("\   o\/o   /")
         print(" \   ||   /")
         print("  \  ||  /")
 
     def increment_age(self):
-        self.age += 1
+        self.__age += 1
 
     def increment_energy(self):
-        self.energy += 1
+        self.__energy += 1
 
     def increment_shield(self):
-        self.shield += 1
+        self.__shield += 1
 
     def display_summary(self):
         self.display_name()
